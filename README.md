@@ -1,4 +1,4 @@
- Responsive Opt-Out Plugin
+## Responsive Opt-Out Plugin
 
 * [Ulrich Pogson](http://ulrich.pogson.ch)
 * *License.* GPLv2
