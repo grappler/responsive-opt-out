@@ -49,7 +49,7 @@ if (!is_admin())
 if (!function_exists('responsive_opt_out_js')) {
 
 	function responsive_opt_out_js() {
-		wp_enqueue_script('responsive-opt-out', plugins_url() . '/js/responsive-opt-out.min.js', '1.0', false);
+		wp_enqueue_script('responsive-opt-out', plugins_url( '/js/responsive-opt-out.min.js', __FILE__ ), '1.0', false);
 	}
 
 }
