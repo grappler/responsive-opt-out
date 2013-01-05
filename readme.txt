@@ -4,7 +4,7 @@ Donate link: http://ulrich.pogson.ch/
 Tags: responsive, fixed-width, opt-out
 Requires at least: 3.4
 Tested up to: 3.5
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,10 +16,16 @@ This is a simple setup to create a body class "responsive" and being able to cha
 
 == Changelog ==
 
+= 1.1 =
+Fix for Firefox
+
 = 1.0 =
 Initial Release
 
 == Upgrade Notice ==
+
+= 1.1 =
+Fix for Firefox
 
 = 1.0 =
 Initial Release
