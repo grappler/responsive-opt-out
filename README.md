@@ -42,10 +42,6 @@ If you're interested in downloading and installing this plugin:
 
 ## Changelog
 
-_1.1 (5th January 2013)_
-
-* Fix for Firefox
-
-_1.0 (2nd January 2013)_
+_0.1 (2nd January 2013)_
 
 * Initial commit
