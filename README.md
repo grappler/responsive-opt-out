@@ -5,8 +5,9 @@
 
 ## Summary
 
-This is a simple setup to create a body class "responsive" and being able to change it to "fixed-width" at a click of a button. These two classes help to define the layout for a fixed width site and a responsive site. The css will vary from theme to theme.
+Responsive Opt-Out allows visitors of your site to switch between the flexible and fixed width layout.
 
+This simple setup creates a body class called "responsive" and "fixed-width" both are added to the body class of your Theme. These two classes are used to define whether or not visitor wants a "responsive" environment.
 ## Checkout
 
 You can always checkout the latest version at [this URL](https://github.com/grappler/responsive-opt-out).
