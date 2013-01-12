@@ -8,24 +8,55 @@ Stable tag: 1.1
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Switch from responsive to fixed width design and back.
+Responsive Opt-Out allows visitors of your site to switch between the flexible and fixed width layout.
 
 == Description ==
 
-This is a simple setup to create a body class "responsive" and being able to change it to "fixed-width" at a click of a button. These two classes help to define the layout for a fixed width site and a responsive site. The css will vary from theme to theme.
+This simple setup creates a body class called "responsive" and "fixed-width" both are added to the body class of your Theme. These two classes are used to define whether or not the visitor wants a "responsive" environment.
+
+== Installation ==
+
+You can either install it automatically from the WordPress admin, or do it manually:
+
+1. Unzip the archive and put the `responsive-opt-out` folder into your plugins folder (/wp-content/plugins/).
+1. Activate the plugin from the Plugins menu.
+
+= Buttons =
+
+So that you have the buttons to switch you will need this html code. They can be added anywhere.
+
+`
+<a href="#" onclick="return FixedWidth();" class="fixed-width-link">Fixed Width</a>
+<a href="#" onclick="return Responsive()" class="responsive-link">Reponsive</a>
+`
+
+= CSS/Styling =
+
+This plugin has no css. So that the buttons display in the correct view the following css need to be added to your theme's style.css file directly.
+
+`
+.responsive .fixed-width-link {
+    display: block!important;
+}
+.responsive .responsive-link {
+    display: none!important;
+}
+.fixed-width .fixed-width-link {
+    display: none!important;
+}
+.fixed-width .responsive-link {
+    display: block!important;
+}
+`
+
+Add the class ".fixed-width" infront of any styles that you add for a fixed width design and ".responsive" for the responsive design.
 
 == Changelog ==
-
-= 1.1 =
-Fix for Firefox
 
 = 1.0 =
 Initial Release
 
 == Upgrade Notice ==
-
-= 1.1 =
-Fix for Firefox
 
 = 1.0 =
 Initial Release
