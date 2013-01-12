@@ -1,4 +1,4 @@
-=== Plugin Name ===
+=== Responsive Opt-Out ===
 Contributors: grapplerulrich
 Donate link: http://ulrich.pogson.ch/
 Tags: responsive, fixed-width, opt-out
