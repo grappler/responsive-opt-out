@@ -3,8 +3,8 @@
 /*
  * Plugin Name: Responsive Opt-Out
  * Plugin URI: https://github.com/grappler/responsive-opt-out
- * Description: Switch from responsive to fixed width design and back.
- * Version: 1.0
+ * Description: Responsive Opt-Out allows visitors of your site to switch between the flexible and fixed width layout.
+ * Version: 0.1
  * Author: Ulrich Pogson
  * Author URI: http://ulrich.pogson.ch
  * License: GPL2+
