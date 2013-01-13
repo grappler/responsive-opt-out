@@ -31,13 +31,13 @@ This CSS wil make sure the correct button is displayed is the differnt views.
 
 ## Checkout
 
-You can always checkout the latest version at [this URL](https://github.com/grappler/responsive-opt-out).
+You can always checkout the latest version at [this URL](http://wordpress.org/extend/plugins/responsive-opt-out/).
 
 ## Install
 
 If you're interested in downloading and installing this plugin:
 
-1. Download the the latest [release](https://github.com/grappler/responsive-opt-out/zipball/master)
+1. Download the the latest [release](http://wordpress.org/extend/plugins/responsive-opt-out/)
 2. Install using the [WordPress install process](http://codex.wordpress.org/Managing_Plugins#Manual_Plugin_Installation)
 
 ## Changelog
