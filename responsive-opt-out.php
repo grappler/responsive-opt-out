@@ -2,7 +2,7 @@
 
 /*
  * Plugin Name: Responsive Opt-Out
- * Plugin URI: https://github.com/grappler/responsive-opt-out
+ * Plugin URI: http://wordpress.org/extend/plugins/responsive-opt-out/
  * Description: Responsive Opt-Out allows visitors of your site to switch between the flexible and fixed width layout.
  * Version: 0.1
  * Author: Ulrich Pogson
