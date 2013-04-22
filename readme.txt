@@ -51,6 +51,8 @@ This plugin has no css. So that the buttons display in the correct view the foll
 
 Add the class ".fixed-width" infront of any styles that you add for a fixed width design and ".responsive" for the responsive design.
 
+<a href=\"http://themeid.com/responsive-opt-out-plugin/\">Blog post on intregration with Responsive theme</a>
+
 == Changelog ==
 
 = 0.1 =

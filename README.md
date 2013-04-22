@@ -29,6 +29,8 @@ This CSS wil make sure the correct button is displayed is the differnt views.
 		display: block!important;
     }
 
+<a href=\"http://themeid.com/responsive-opt-out-plugin/\">Blog post on intregration with Responsive theme</a>
+
 ## Checkout
 
 You can always checkout the latest version at [this URL](http://wordpress.org/extend/plugins/responsive-opt-out/).
