@@ -30,7 +30,9 @@ function FixedWidth() {
 
 	// if cookies are enabled then set a cookie with a value 'fixed width'
 	if (cookie.enabled()) {
-		cookie.set( 'responsive_opt_out', 'fixed width' );
+		cookie.set( 'responsive_opt_out', 'fixed width', {
+			path: '/',
+		} );
 	} else {
 		// Cookies are turned off you can not use cookies
 	}
@@ -48,7 +50,9 @@ function Responsive() {
 
 	// if cookies are enabled then set a cookie with a value 'responsive'
 	if (cookie.enabled()) {
-		cookie.set( 'responsive_opt_out', 'responsive' );
+		cookie.set( 'responsive_opt_out', 'responsive', {
+			path: '/',
+		} );
 	} else {
 		// Cookies are turned off you can not use cookies
 	}
