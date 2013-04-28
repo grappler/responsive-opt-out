@@ -4,7 +4,7 @@
  * Plugin Name: Responsive Opt-Out
  * Plugin URI: http://wordpress.org/extend/plugins/responsive-opt-out/
  * Description: Responsive Opt-Out allows visitors of your site to switch between the flexible and fixed width layout.
- * Version: 0.2
+ * Version: 0.3
  * Author: Ulrich Pogson
  * Author URI: http://ulrich.pogson.ch
  * License: GPL2+
@@ -34,11 +34,15 @@ if ( !defined('ABSPATH')) exit;
 /**
  * Adds a custom class to the array of body classes, to allows to switch class for the fixed width.
  */
-function responsive_opt_out_body_classes( $classes ) {
-	$classes[] = 'responsive';
-	return $classes;
-}
-add_filter( 'body_class', 'responsive_opt_out_body_classes' );
+if (!function_exists('responsive_setup')):
+
+	function responsive_opt_out_body_classes( $classes ) {
+		$classes[] = 'responsive';
+		return $classes;
+	}
+	add_filter( 'body_class', 'responsive_opt_out_body_classes' );
+
+endif;
 
 /**
  * A safe way of adding JavaScripts to a WordPress generated page.
