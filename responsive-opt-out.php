@@ -1,59 +1,51 @@
 <?php
-
-/*
+/**
+ * Responsive Opt-Out
+ *
+ * Responsive Opt-Out allows visitors of your site to switch between the flexible and fixed width layout.
+ *
+ * @package   Responsive Opt-Out
+ * @author    Ulrich Pogson <ulrich@pogson.ch>
+ * @license   GPL-2.0+
+ * @link      http://ulrich.pogson.ch/
+ * @copyright 2013 Ulrich Pogson
+ *
+ * @wordpress-plugin
  * Plugin Name: Responsive Opt-Out
- * Plugin URI: http://wordpress.org/extend/plugins/responsive-opt-out/
+ * Plugin URI:  http://wordpress.org/extend/plugins/responsive-opt-out/
  * Description: Responsive Opt-Out allows visitors of your site to switch between the flexible and fixed width layout.
- * Version: 0.3
- * Author: Ulrich Pogson
- * Author URI: http://ulrich.pogson.ch
- * License: GPL2+
+ * Version:     0.4.0
+ * Author:      Ulrich Pogson
+ * Author URI:  http://ulrich.pogson.ch
+ * License:     GPL2+
+ * Text Domain: responsive-opt-out
+ * License:     GPL-2.0+
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  */
- 
-/*
-    Copyright (C) 2013  Ulrich Pogson
 
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-*/
-
-// Exit if accessed directly
-if ( !defined('ABSPATH')) exit;
+// If this file is called directly, abort.
+if ( ! defined( 'WPINC' ) ) {
+	die;
+}
 
 /**
- * Adds a custom class to the array of body classes, to allows to switch class for the fixed width.
+ * Adds a `responsive` class to the array of body classes, to allows to switch class for the fixed width.
+ *
+ * @since 0.1.0
  */
-if (!function_exists('responsive_setup')):
-
-	function responsive_opt_out_body_classes( $classes ) {
-		$classes[] = 'responsive';
-		return $classes;
-	}
-	add_filter( 'body_class', 'responsive_opt_out_body_classes' );
-
-endif;
+function responsive_opt_out_body_classes( $classes ) {
+	$classes[] = 'responsive';
+	return $classes;
+}
+add_filter( 'body_class', 'responsive_opt_out_body_classes' );
 
 /**
  * A safe way of adding JavaScripts to a WordPress generated page.
+ *
+ * @since 0.1.0
  */
-if (!is_admin())
-	add_action('wp_enqueue_scripts', 'responsive_opt_out_js');
-
-if (!function_exists('responsive_opt_out_js')) {
-
-	function responsive_opt_out_js() {
-		wp_enqueue_script('responsive-opt-out', plugins_url( '/js/responsive-opt-out.min.js', __FILE__ ), '1.0', false);
-	}
-
+function responsive_opt_out_js() {
+	$suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
+	wp_enqueue_script('responsive-opt-out', plugins_url( '/js/responsive-opt-out' . $suffix . '.js', __FILE__ ), '1.0', false);
 }
+add_action( 'wp_enqueue_scripts', 'responsive_opt_out_js' );

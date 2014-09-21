@@ -218,10 +218,6 @@ function Responsive() {
         body.className = (body.className).replace("fixed-width", classToAdd);
     })(document.body, "responsive");
 
-    // change meta viewport
-    viewport = document.querySelector("meta[name=viewport]");
-    viewport.setAttribute('content', 'width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0');
-
     // if cookies are enabled then set a cookie with a value 'responsive'
     if (cookie.enabled()) {
         cookie.set('responsive_opt_out', 'responsive', {

@@ -11,25 +11,29 @@ This simple setup creates a body class called "responsive" and "fixed-width" bot
 
 This is the html for the buttons. They can be added anywhere.
 
-    <a href="#" onclick="return FixedWidth();" class="fixed-width-link">Fixed Width</a>
-    <a href="#" onclick="return Responsive()" class="responsive-link">Reponsive</a>
+```
+<a href="#" onclick="return FixedWidth();" class="fixed-width-link">Fixed Width</a>
+<a href="#" onclick="return Responsive()" class="responsive-link">Reponsive</a>
+```
  
 This CSS wil make sure the correct button is displayed is the differnt views.
 
-    .responsive .fixed-width-link {
-		display: block!important;
-    }
-    .responsive .responsive-link {
-		display: none!important;
-    }
-    .fixed-width .fixed-width-link {
-		display: none!important;
-    }
-    .fixed-width .responsive-link {
-		display: block!important;
-    }
+```
+.responsive .fixed-width-link {
+	display: block!important;
+}
+.responsive .responsive-link {
+	display: none!important;
+}
+.fixed-width .fixed-width-link {
+	display: none!important;
+}
+.fixed-width .responsive-link {
+	display: block!important;
+}
+```
 
-<a href=\"http://themeid.com/responsive-opt-out-plugin/\">Blog post on intregration with Responsive theme</a>
+<a href="http://ulrich.pogson.ch/responsive-opt-out-plugin">Blog post on intregration with Responsive theme</a>
 
 ## Checkout
 
@@ -43,7 +47,14 @@ If you're interested in downloading and installing this plugin:
 2. Install using the [WordPress install process](http://codex.wordpress.org/Managing_Plugins#Manual_Plugin_Installation)
 
 ## Changelog
+_0.4.0 -  _
+Improve code
 
-_0.1 (2nd January 2013)_
+_0.3.0 - 28 April 2013_
+Fix setting cookie
 
-* Initial commit
+_0.2.0 - 22 April 2013_
+Fix cookie path
+
+_0.1.0 - 13 January 2013_
+Initial release
