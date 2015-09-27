@@ -15,8 +15,8 @@ This is the html for the buttons. They can be added anywhere.
 <a href="#" onclick="return FixedWidth();" class="fixed-width-link">Fixed Width</a>
 <a href="#" onclick="return Responsive()" class="responsive-link">Reponsive</a>
 ```
- 
-This CSS wil make sure the correct button is displayed is the differnt views.
+
+This CSS will make sure the correct button is displayed is the different views.
 
 ```
 .responsive .fixed-width-link {
@@ -33,21 +33,25 @@ This CSS wil make sure the correct button is displayed is the differnt views.
 }
 ```
 
-<a href="http://ulrich.pogson.ch/responsive-opt-out-plugin">Blog post on intregration with Responsive theme</a>
+<a href="http://ulrich.pogson.ch/responsive-opt-out-plugin">Blog post on integration with Responsive theme</a>
 
 ## Checkout
 
-You can always checkout the latest version at [this URL](http://wordpress.org/extend/plugins/responsive-opt-out/).
+You can always checkout the latest version at [this URL](http://wordpress.org/plugins/responsive-opt-out/).
 
 ## Install
 
 If you're interested in downloading and installing this plugin:
 
-1. Download the the latest [release](http://wordpress.org/extend/plugins/responsive-opt-out/)
+1. Download the the latest [release](http://wordpress.org/plugins/responsive-opt-out/)
 2. Install using the [WordPress install process](http://codex.wordpress.org/Managing_Plugins#Manual_Plugin_Installation)
 
 ## Changelog
-_0.4.0 -  _
+
+_0.5.0 - 21 September 2015 _
+
+
+_0.4.0 - 21 September 2014 _
 Improve code
 
 _0.3.0 - 28 April 2013_

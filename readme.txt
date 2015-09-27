@@ -1,7 +1,7 @@
 === Responsive Opt-Out ===
 Contributors: grapplerulrich
 Donate link: http://ulrich.pogson.ch/
-Tags: responsive, fixed-width, opt-out
+Tags: responsive, fixed-width, opt-out, switch
 Requires at least: 3.4
 Tested up to: 3.8
 Stable tag: trunk
@@ -49,7 +49,7 @@ So that you have the buttons to switch you will need this html code. They can be
 
 = CSS/Styling =
 
-This plugin has no css. So that the buttons display in the correct view the following css need to be added to your theme's style.css file directly.
+This plugin has no CSS. So that the buttons display in the correct view the following CSS need to be added to your theme's style.css file directly.
 
 `
 .responsive .fixed-width-link {
@@ -66,13 +66,16 @@ This plugin has no css. So that the buttons display in the correct view the foll
 }
 `
 
-Add the class ".fixed-width" infront of any styles that you add for a fixed width design and ".responsive" for the responsive design.
+Add the class ".fixed-width" in front of any styles that you add for a fixed width design and ".responsive" for the responsive design.
 
-<a href="http://ulrich.pogson.ch/responsive-opt-out-plugin">Blog post on intregration with Responsive theme</a>
+<a href="http://ulrich.pogson.ch/responsive-opt-out-plugin">Blog post on integration with Responsive theme</a>
 
 == Changelog ==
 
-= 0.4.0 -  =
+= 0.5.0 - 21 September 2015 =
+
+
+= 0.4.0 - 21 September 2014 =
 Improve code
 
 = 0.3.0 - 28 April 2013 =
@@ -85,6 +88,9 @@ Fix cookie path
 Initial release
 
 == Upgrade Notice ==
+
+= 0.5.0 =
+Improve code
 
 = 0.4.0 =
 Improve code

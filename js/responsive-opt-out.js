@@ -1,4 +1,4 @@
-// Copyright (c) 2012 Florian H., https://github.com/js-coder https://github.com/js-coder/cookie.js
+// Copyright (c) 2012 Florian H., https://github.com/florian https://github.com/florian/cookie.js
 
 ! function (document, undefined) {
 
@@ -172,7 +172,8 @@
     } else window.cookie = cookie;
 
 }(document);
-// Copyright (c) 2013 Ulrich Pogson, https://github.com/grapplerulrich/responsive-opt-out.js
+
+// Copyright (c) 2013 Ulrich Pogson, https://github.com/grappler/responsive-opt-out
 
 // check if the there is a cookie with the value 'fixed width'
 if (cookie('responsive_opt_out') == 'fixed width') {
